@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="container_home" type="id" />
+    <item name="toolbar_home" type="id" />
+    <item name="toolbar_first" type="id" />
+    <item name="toolbar_second" type="id" />
+    <item name="tv_home" type="id" />
+    <item name="tv_first" type="id" />
+    <item name="tv_second" type="id" />
+    <item name="rv_home" type="id" />
+    <item name="btn_next" type="id" />
+</resources>

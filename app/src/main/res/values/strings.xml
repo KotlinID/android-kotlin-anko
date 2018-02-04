@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">android-kotlin-anko</string>
+    <string name="app_name">Kotlin Anko</string>
+    <string name="menu_basic_intent">Basic Intent</string>
+    <string name="label_first">First</string>
+    <string name="label_second">Second</string>
+    <string name="text_first">First content</string>
+    <string name="text_second">Second content</string>
+    <string name="btn_next">Next</string>
 </resources>
