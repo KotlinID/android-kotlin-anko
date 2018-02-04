@@ -2,9 +2,15 @@
 <resources>
     <string name="app_name">Kotlin Anko</string>
     <string name="menu_basic_intent">Basic Intent</string>
+    <string name="menu_basic_intent_extra">Basic Intent Extra</string>
     <string name="label_first">First</string>
+    <string name="label_first_extra">First Extra</string>
     <string name="label_second">Second</string>
+    <string name="label_second_extra">Second Extra</string>
     <string name="text_first">First content</string>
     <string name="text_second">Second content</string>
+    <string name="text_name">My name is %1$s</string>
     <string name="btn_next">Next</string>
+    <string name="btn_submit">Submit</string>
+    <string name="hint_name">Input your name</string>
 </resources>

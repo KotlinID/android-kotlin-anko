@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import id.kotlin.sample.anko.R
 import id.kotlin.sample.anko.basic.FirstActivity
+import id.kotlin.sample.anko.basic.FirstExtraActivity
 import id.kotlin.sample.anko.dsl.HomeUI
 import id.kotlin.sample.anko.home.HomeAdapter.HomeListener
 import org.jetbrains.anko.find
@@ -40,6 +41,7 @@ class HomeActivity : AppCompatActivity(), HomeListener {
     override fun onMenuClick(position: Int) {
         when (position) {
             HomeConfigs.MENU_BASIC_INTENT -> startActivity<FirstActivity>()
+            HomeConfigs.MENU_BASIC_INTENT_EXTRA -> startActivity<FirstExtraActivity>()
         }
     }
 }

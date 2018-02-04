@@ -21,7 +21,14 @@
             android:name="id.kotlin.sample.anko.basic.FirstActivity"
             android:label="@string/label_first" />
         <activity
+            android:name="id.kotlin.sample.anko.basic.FirstExtraActivity"
+            android:label="@string/label_first_extra"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
             android:name="id.kotlin.sample.anko.basic.SecondActivity"
             android:label="@string/label_second" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.SecondExtraActivity"
+            android:label="@string/label_second_extra" />
     </application>
 </manifest>

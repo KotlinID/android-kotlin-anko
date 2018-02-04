@@ -2,5 +2,6 @@
 <resources>
     <string-array name="menu">
         <item>@string/menu_basic_intent</item>
+        <item>@string/menu_basic_intent_extra</item>
     </string-array>
 </resources>
