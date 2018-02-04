@@ -30,5 +30,23 @@
         <activity
             android:name="id.kotlin.sample.anko.basic.SecondExtraActivity"
             android:label="@string/label_second_extra" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.callers.CallersActivity"
+            android:label="@string/label_callers" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.callers.type.PhoneCallActivity"
+            android:label="@string/type_call" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.callers.type.SendMessageActivity"
+            android:label="@string/type_sms" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.callers.type.OpenBrowserActivity"
+            android:label="@string/type_browse" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.callers.type.ShareActivity"
+            android:label="@string/type_share" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.callers.type.SendEmailActivity"
+            android:label="@string/type_email" />
     </application>
 </manifest>

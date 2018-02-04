@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="container_home" type="id" />
+    <item name="container_callers" type="id" />
     <item name="toolbar_home" type="id" />
     <item name="toolbar_first" type="id" />
     <item name="toolbar_first_extra" type="id" />
     <item name="toolbar_second" type="id" />
     <item name="toolbar_second_extra" type="id" />
+    <item name="toolbar_callers" type="id" />
+    <item name="toolbar_phone" type="id" />
+    <item name="toolbar_sms" type="id" />
+    <item name="toolbar_browse" type="id" />
+    <item name="toolbar_share" type="id" />
+    <item name="toolbar_email" type="id" />
     <item name="tv_home" type="id" />
     <item name="tv_first" type="id" />
     <item name="tv_second" type="id" />
     <item name="tv_name" type="id" />
+    <item name="tv_callers" type="id" />
     <item name="rv_home" type="id" />
+    <item name="rv_callers" type="id" />
     <item name="btn_next" type="id" />
     <item name="btn_submit" type="id" />
     <item name="et_name" type="id" />

@@ -3,5 +3,13 @@
     <string-array name="menu">
         <item>@string/menu_basic_intent</item>
         <item>@string/menu_basic_intent_extra</item>
+        <item>@string/menu_basic_intent_callers</item>
+    </string-array>
+    <string-array name="types">
+        <item>@string/type_call</item>
+        <item>@string/type_sms</item>
+        <item>@string/type_browse</item>
+        <item>@string/type_share</item>
+        <item>@string/type_email</item>
     </string-array>
 </resources>
