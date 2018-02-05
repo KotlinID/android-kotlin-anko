@@ -5,6 +5,8 @@
         <item>@string/menu_basic_intent_extra</item>
         <item>@string/menu_basic_intent_callers</item>
         <item>@string/menu_basic_dialogs</item>
+        <item>@string/menu_db_sample</item>
+        <item>@string/menu_coroutine_sample</item>
     </string-array>
     <string-array name="types">
         <item>@string/type_call</item>

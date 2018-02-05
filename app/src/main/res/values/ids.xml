@@ -17,6 +17,8 @@
     <item name="toolbar_share" type="id" />
     <item name="toolbar_email" type="id" />
     <item name="toolbar_actions" type="id" />
+    <item name="toolbar_db" type="id" />
+    <item name="toolbar_coroutine" type="id" />
     <item name="tv_home" type="id" />
     <item name="tv_first" type="id" />
     <item name="tv_second" type="id" />

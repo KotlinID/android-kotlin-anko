@@ -5,6 +5,8 @@
     <string name="menu_basic_intent_extra">Basic Intent Extra</string>
     <string name="menu_basic_intent_callers">Basic Intent Callers</string>
     <string name="menu_basic_dialogs">Basic Dialogs</string>
+    <string name="menu_db_sample">SQLite Sample</string>
+    <string name="menu_coroutine_sample">Coroutine Sample</string>
     <string name="type_call">Make a Call</string>
     <string name="type_sms">Send Message</string>
     <string name="type_browse">Browse a Web</string>
@@ -23,6 +25,8 @@
     <string name="label_second_extra">Second Extra</string>
     <string name="label_callers">Callers</string>
     <string name="label_actions">Actions</string>
+    <string name="label_db">SQLite Helper</string>
+    <string name="label_coroutine">Coroutine Helper</string>
     <string name="message_permissions_granted">Permissions granted!</string>
     <string name="message_permissions_denied">Permissions denied!</string>
     <string name="message_toast">Hello!</string>

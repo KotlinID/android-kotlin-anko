@@ -59,5 +59,11 @@
         <activity
             android:name="id.kotlin.sample.anko.basic.actions.ActionsActivity"
             android:label="@string/label_actions" />
+        <activity
+            android:name="id.kotlin.sample.anko.db.DBInputActivity"
+            android:label="@string/label_db" />
+        <activity
+            android:name="id.kotlin.sample.anko.coroutine.CoroutineActivity"
+            android:label="@string/label_coroutine" />
     </application>
 </manifest>
