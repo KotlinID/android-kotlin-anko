@@ -1,6 +1,10 @@
 package id.kotlin.sample.anko.basic.callers
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
+import android.support.design.widget.CoordinatorLayout
+import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -15,6 +19,8 @@ import id.kotlin.sample.anko.basic.callers.type.SendEmailActivity
 import id.kotlin.sample.anko.basic.callers.type.SendMessageActivity
 import id.kotlin.sample.anko.basic.callers.type.ShareActivity
 import id.kotlin.sample.anko.dsl.CallersUI
+import id.kotlin.sample.anko.ext.hasSelfPermissions
+import org.jetbrains.anko.design.snackbar
 import org.jetbrains.anko.find
 import org.jetbrains.anko.setContentView
 import org.jetbrains.anko.startActivity
@@ -42,6 +48,14 @@ class CallersActivity : AppCompatActivity(), CallersListener {
         recyclerView.layoutManager = layoutManager
         recyclerView.smoothScrollToPosition(recyclerView.bottom)
         recyclerView.adapter = adapter
+
+        val permissions = arrayOf(
+                Manifest.permission.CALL_PHONE,
+                Manifest.permission.SEND_SMS
+        )
+        when {
+            hasSelfPermissions(permissions) -> ActivityCompat.requestPermissions(this, permissions, CallersConfigs.GRANT_ALL_PERMISSIONS)
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -52,6 +66,18 @@ class CallersActivity : AppCompatActivity(), CallersListener {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        val rootView = find<CoordinatorLayout>(R.id.container_callers)
+        when (requestCode) {
+            CallersConfigs.GRANT_ALL_PERMISSIONS -> when {
+                grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED -> snackbar(rootView, resources.getString(R.string.message_permissions_granted)).show()
+                else -> snackbar(rootView, resources.getString(R.string.message_permissions_denied)).show()
+            }
+        }
+
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 
     override fun onTypeClick(position: Int) {

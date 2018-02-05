@@ -37,7 +37,7 @@ class CallersAdapter(private val listener: CallersListener,
                 val textView = itemView.find<TextView>(R.id.tv_callers)
                 textView.text = type
 
-                val rootView = itemView.find<RelativeLayout>(R.id.container_callers)
+                val rootView = itemView.find<RelativeLayout>(R.id.container_callers_item)
                 rootView.setOnClickListener { listener.onTypeClick(adapterPosition) }
             }
         }

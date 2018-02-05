@@ -20,6 +20,7 @@ class CallersUI : AnkoComponent<CallersActivity> {
 
     override fun createView(ui: AnkoContext<CallersActivity>) = with(ui) {
         coordinatorLayout {
+            id = R.id.container_callers
             backgroundColor = ContextCompat.getColor(ctx, R.color.colorPrimary)
 
             relativeLayout {

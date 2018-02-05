@@ -7,4 +7,5 @@ object CallersConfigs {
     const val TYPE_BROWSE = 2
     const val TYPE_SHARE = 3
     const val TYPE_EMAIL = 4
+    const val GRANT_ALL_PERMISSIONS = 666
 }

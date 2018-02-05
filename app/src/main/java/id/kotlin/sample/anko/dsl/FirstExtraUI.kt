@@ -14,7 +14,6 @@ import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.below
 import org.jetbrains.anko.bottomPadding
 import org.jetbrains.anko.button
-import org.jetbrains.anko.centerInParent
 import org.jetbrains.anko.design.coordinatorLayout
 import org.jetbrains.anko.dip
 import org.jetbrains.anko.editText
@@ -54,9 +53,9 @@ class FirstExtraUI : AnkoComponent<FirstExtraActivity> {
                     inputType = InputType.TYPE_CLASS_TEXT
                 }.lparams {
                     below(R.id.toolbar_first_extra)
-                    centerInParent()
                     width = matchParent
                     height = wrapContent
+                    topMargin = dip(8)
                     marginEnd = dip(16)
                     marginStart = dip(16)
                 }

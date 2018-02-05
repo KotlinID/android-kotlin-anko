@@ -2,6 +2,7 @@
 <resources>
     <item name="container_home" type="id" />
     <item name="container_callers" type="id" />
+    <item name="container_callers_item" type="id" />
     <item name="toolbar_home" type="id" />
     <item name="toolbar_first" type="id" />
     <item name="toolbar_first_extra" type="id" />
@@ -22,5 +23,14 @@
     <item name="rv_callers" type="id" />
     <item name="btn_next" type="id" />
     <item name="btn_submit" type="id" />
+    <item name="btn_call" type="id" />
+    <item name="btn_message" type="id" />
+    <item name="btn_open" type="id" />
+    <item name="btn_share" type="id" />
+    <item name="btn_email" type="id" />
     <item name="et_name" type="id" />
+    <item name="et_phone" type="id" />
+    <item name="et_message" type="id" />
+    <item name="et_link" type="id" />
+    <item name="et_email" type="id" />
 </resources>

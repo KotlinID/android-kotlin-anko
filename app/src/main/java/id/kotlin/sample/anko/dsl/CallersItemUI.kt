@@ -21,7 +21,7 @@ class CallersItemUI : AnkoComponent<ViewGroup> {
     override fun createView(ui: AnkoContext<ViewGroup>) = with(ui) {
         relativeLayout {
             val typedValue = TypedValue()
-            id = R.id.container_callers
+            id = R.id.container_callers_item
             ctx.theme.resolveAttribute(android.R.attr.selectableItemBackground, typedValue, true)
             backgroundResource = typedValue.resourceId
             isClickable = true

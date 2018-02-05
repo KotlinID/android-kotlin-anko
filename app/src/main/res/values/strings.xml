@@ -14,6 +14,8 @@
     <string name="label_second">Second</string>
     <string name="label_second_extra">Second Extra</string>
     <string name="label_callers">Callers</string>
+    <string name="message_permissions_granted">Permissions granted!</string>
+    <string name="message_permissions_denied">Permissions denied!</string>
     <string name="text_first">First content</string>
     <string name="text_second">Second content</string>
     <string name="text_name">My name is %1$s</string>
