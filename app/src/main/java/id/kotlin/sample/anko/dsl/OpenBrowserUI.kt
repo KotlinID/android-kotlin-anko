@@ -1,6 +1,8 @@
 package id.kotlin.sample.anko.dsl
 
 import android.support.v4.content.ContextCompat
+import android.text.InputType
+import android.view.inputmethod.EditorInfo
 import id.kotlin.sample.anko.R
 import id.kotlin.sample.anko.basic.callers.type.OpenBrowserActivity
 import org.jetbrains.anko.AnkoComponent
@@ -15,6 +17,8 @@ import org.jetbrains.anko.bottomPadding
 import org.jetbrains.anko.button
 import org.jetbrains.anko.design.coordinatorLayout
 import org.jetbrains.anko.dip
+import org.jetbrains.anko.editText
+import org.jetbrains.anko.hintTextColor
 import org.jetbrains.anko.matchParent
 import org.jetbrains.anko.relativeLayout
 import org.jetbrains.anko.scrollView
@@ -44,7 +48,24 @@ class OpenBrowserUI : AnkoComponent<OpenBrowserActivity> {
                 scrollView {
                     isFillViewport = true
 
-                    verticalLayout {}
+                    verticalLayout {
+                        editText {
+                            id = R.id.et_link
+                            hint = ctx.resources.getString(R.string.hint_link)
+                            hintTextColor = ContextCompat.getColor(ctx, R.color.colorAccent)
+                            textColor = ContextCompat.getColor(ctx, R.color.colorPrimaryDark)
+                            textSize = 16f
+                            isCursorVisible = false
+                            imeOptions = EditorInfo.IME_ACTION_DONE
+                            inputType = InputType.TYPE_CLASS_TEXT
+                        }.lparams {
+                            width = matchParent
+                            height = wrapContent
+                            topMargin = dip(8)
+                            marginEnd = dip(16)
+                            marginStart = dip(16)
+                        }
+                    }
                 }.lparams {
                     below(R.id.toolbar_browse)
                     above(R.id.btn_open)
