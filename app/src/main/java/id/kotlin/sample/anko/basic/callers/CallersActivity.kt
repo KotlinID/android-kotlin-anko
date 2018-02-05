@@ -20,12 +20,14 @@ import id.kotlin.sample.anko.basic.callers.type.SendMessageActivity
 import id.kotlin.sample.anko.basic.callers.type.ShareActivity
 import id.kotlin.sample.anko.dsl.CallersUI
 import id.kotlin.sample.anko.ext.hasSelfPermissions
+import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.design.snackbar
 import org.jetbrains.anko.find
+import org.jetbrains.anko.info
 import org.jetbrains.anko.setContentView
 import org.jetbrains.anko.startActivity
 
-class CallersActivity : AppCompatActivity(), CallersListener {
+class CallersActivity : AppCompatActivity(), CallersListener, AnkoLogger {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,8 +74,14 @@ class CallersActivity : AppCompatActivity(), CallersListener {
         val rootView = find<CoordinatorLayout>(R.id.container_callers)
         when (requestCode) {
             CallersConfigs.GRANT_ALL_PERMISSIONS -> when {
-                grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED -> snackbar(rootView, resources.getString(R.string.message_permissions_granted)).show()
-                else -> snackbar(rootView, resources.getString(R.string.message_permissions_denied)).show()
+                grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED -> {
+                    snackbar(rootView, R.string.message_permissions_granted).show()
+                    info("Permissions are granted!")
+                }
+                else -> {
+                    snackbar(rootView, R.string.message_permissions_denied).show()
+                    info { "Permissions are denied!" }
+                }
             }
         }
 

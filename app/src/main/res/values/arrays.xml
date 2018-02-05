@@ -4,6 +4,7 @@
         <item>@string/menu_basic_intent</item>
         <item>@string/menu_basic_intent_extra</item>
         <item>@string/menu_basic_intent_callers</item>
+        <item>@string/menu_basic_dialogs</item>
     </string-array>
     <string-array name="types">
         <item>@string/type_call</item>
@@ -11,5 +12,18 @@
         <item>@string/type_browse</item>
         <item>@string/type_share</item>
         <item>@string/type_email</item>
+    </string-array>
+    <string-array name="actions">
+        <item>@string/action_toast</item>
+        <item>@string/action_toast_long</item>
+        <item>@string/action_snackbar</item>
+        <item>@string/action_snackbar_long</item>
+        <item>@string/action_alert</item>
+        <item>@string/action_selector</item>
+        <item>@string/action_progress_dialog</item>
+    </string-array>
+    <string-array name="gender">
+        <item>@string/selector_male</item>
+        <item>@string/selector_female</item>
     </string-array>
 </resources>

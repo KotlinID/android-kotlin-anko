@@ -3,6 +3,8 @@
     <item name="container_home" type="id" />
     <item name="container_callers" type="id" />
     <item name="container_callers_item" type="id" />
+    <item name="container_actions" type="id" />
+    <item name="container_actions_item" type="id" />
     <item name="toolbar_home" type="id" />
     <item name="toolbar_first" type="id" />
     <item name="toolbar_first_extra" type="id" />
@@ -14,13 +16,16 @@
     <item name="toolbar_browse" type="id" />
     <item name="toolbar_share" type="id" />
     <item name="toolbar_email" type="id" />
+    <item name="toolbar_actions" type="id" />
     <item name="tv_home" type="id" />
     <item name="tv_first" type="id" />
     <item name="tv_second" type="id" />
     <item name="tv_name" type="id" />
     <item name="tv_callers" type="id" />
+    <item name="tv_actions" type="id" />
     <item name="rv_home" type="id" />
     <item name="rv_callers" type="id" />
+    <item name="rv_actions" type="id" />
     <item name="btn_next" type="id" />
     <item name="btn_submit" type="id" />
     <item name="btn_call" type="id" />

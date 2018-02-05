@@ -56,5 +56,8 @@
             android:name="id.kotlin.sample.anko.basic.callers.type.SendEmailActivity"
             android:label="@string/type_email"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="id.kotlin.sample.anko.basic.actions.ActionsActivity"
+            android:label="@string/label_actions" />
     </application>
 </manifest>

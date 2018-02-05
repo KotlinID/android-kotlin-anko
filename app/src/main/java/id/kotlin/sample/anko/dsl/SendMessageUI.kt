@@ -3,6 +3,7 @@ package id.kotlin.sample.anko.dsl
 import android.support.v4.content.ContextCompat
 import android.text.InputType
 import android.view.inputmethod.EditorInfo
+import android.widget.EditText
 import id.kotlin.sample.anko.R
 import id.kotlin.sample.anko.basic.callers.type.SendMessageActivity
 import org.jetbrains.anko.AnkoComponent
@@ -11,6 +12,7 @@ import org.jetbrains.anko.above
 import org.jetbrains.anko.alignParentBottom
 import org.jetbrains.anko.alignParentTop
 import org.jetbrains.anko.appcompat.v7.toolbar
+import org.jetbrains.anko.applyRecursively
 import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.below
 import org.jetbrains.anko.bottomPadding
@@ -52,11 +54,6 @@ class SendMessageUI : AnkoComponent<SendMessageActivity> {
                         editText {
                             id = R.id.et_phone
                             hint = ctx.resources.getString(R.string.hint_phone_number)
-                            hintTextColor = ContextCompat.getColor(ctx, R.color.colorAccent)
-                            textColor = ContextCompat.getColor(ctx, R.color.colorPrimaryDark)
-                            textSize = 16f
-                            isCursorVisible = false
-                            imeOptions = EditorInfo.IME_ACTION_DONE
                             inputType = InputType.TYPE_CLASS_PHONE
                         }.lparams {
                             width = matchParent
@@ -69,11 +66,6 @@ class SendMessageUI : AnkoComponent<SendMessageActivity> {
                         editText {
                             id = R.id.et_message
                             hint = ctx.resources.getString(R.string.hint_message)
-                            hintTextColor = ContextCompat.getColor(ctx, R.color.colorAccent)
-                            textColor = ContextCompat.getColor(ctx, R.color.colorPrimaryDark)
-                            textSize = 16f
-                            isCursorVisible = false
-                            imeOptions = EditorInfo.IME_ACTION_DONE
                             inputType = InputType.TYPE_CLASS_TEXT
                         }.lparams {
                             width = matchParent
@@ -81,6 +73,16 @@ class SendMessageUI : AnkoComponent<SendMessageActivity> {
                             topMargin = dip(8)
                             marginEnd = dip(16)
                             marginStart = dip(16)
+                        }
+                    }.applyRecursively { view ->
+                        when (view) {
+                            is EditText -> {
+                                view.hintTextColor = ContextCompat.getColor(ctx, R.color.colorAccent)
+                                view.textColor = ContextCompat.getColor(ctx, R.color.colorPrimaryDark)
+                                view.textSize = 16f
+                                view.isCursorVisible = false
+                                view.imeOptions = EditorInfo.IME_ACTION_DONE
+                            }
                         }
                     }
                 }.lparams {
