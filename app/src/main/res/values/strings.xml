@@ -56,6 +56,8 @@
     <string name="hint_link">Input your link</string>
     <string name="hint_subject">Input your subject</string>
     <string name="hint_email_address">Input your email address</string>
+    <string name="hint_age">Input your age</string>
+    <string name="hint_occupation">What is your passion?</string>
     <string name="selector_male">Male</string>
     <string name="selector_female">Female</string>
 </resources>

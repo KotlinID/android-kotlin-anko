@@ -61,7 +61,8 @@
             android:label="@string/label_actions" />
         <activity
             android:name="id.kotlin.sample.anko.db.DBInputActivity"
-            android:label="@string/label_db" />
+            android:label="@string/label_db"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity
             android:name="id.kotlin.sample.anko.coroutine.CoroutineActivity"
             android:label="@string/label_coroutine" />
