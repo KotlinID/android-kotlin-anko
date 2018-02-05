@@ -30,5 +30,6 @@
     <string name="hint_phone_number">Input phone number</string>
     <string name="hint_message">Input your message</string>
     <string name="hint_link">Input your link</string>
+    <string name="hint_subject">Input your subject</string>
     <string name="hint_email_address">Input your email address</string>
 </resources>

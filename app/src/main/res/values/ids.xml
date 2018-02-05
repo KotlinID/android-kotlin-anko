@@ -32,5 +32,6 @@
     <item name="et_phone" type="id" />
     <item name="et_message" type="id" />
     <item name="et_link" type="id" />
+    <item name="et_subject" type="id" />
     <item name="et_email" type="id" />
 </resources>
