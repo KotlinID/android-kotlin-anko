@@ -10,9 +10,16 @@ import android.widget.Button
 import android.widget.EditText
 import id.kotlin.sample.anko.R
 import id.kotlin.sample.anko.dsl.DBInputUI
+import id.kotlin.sample.anko.ext.database
+import kotlinx.coroutines.experimental.android.UI
+import kotlinx.coroutines.experimental.async
+import org.jetbrains.anko.coroutines.experimental.bg
+import org.jetbrains.anko.db.delete
+import org.jetbrains.anko.db.insert
 import org.jetbrains.anko.find
 import org.jetbrains.anko.setContentView
 import org.jetbrains.anko.startActivity
+import java.util.UUID
 
 class DBInputActivity : AppCompatActivity() {
 
@@ -34,8 +41,24 @@ class DBInputActivity : AppCompatActivity() {
         button.setOnClickListener {
             when {
                 editTextName.text.isNotBlank() && editTextAge.text.isNotBlank() && editTextOccupation.text.isNotBlank() -> {
-                    // TODO Save to db
-                    startActivity<DBResultActivity>()
+                    val name = editTextName.text.toString()
+                    val id = UUID.randomUUID().toString()
+                    val age = editTextAge.text.toString().toInt()
+                    val occupation = editTextOccupation.text.toString()
+                    async(UI) {
+                        bg {
+                            database.use {
+                                delete(DatabaseHelper.TBL_USER)
+                                insert(DatabaseHelper.TBL_USER,
+                                        "name" to name,
+                                        "id" to id,
+                                        "age" to age,
+                                        "occupation" to occupation
+                                )
+                            }
+                        }
+                        startActivity<DBResultActivity>()
+                    }
                 }
             }
         }
