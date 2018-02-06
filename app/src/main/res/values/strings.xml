@@ -27,6 +27,7 @@
     <string name="label_actions">Actions</string>
     <string name="label_db">SQLite Helper</string>
     <string name="label_coroutine">Coroutine Helper</string>
+    <string name="label_db_result">Your Profile</string>
     <string name="message_permissions_granted">Permissions granted!</string>
     <string name="message_permissions_denied">Permissions denied!</string>
     <string name="message_toast">Hello!</string>
@@ -43,6 +44,8 @@
     <string name="text_first">First content</string>
     <string name="text_second">Second content</string>
     <string name="text_name">My name is %1$s</string>
+    <string name="text_age">I\'m %1$s years old</string>
+    <string name="text_occupation">I\'m a %1$s</string>
     <string name="btn_next">Next</string>
     <string name="btn_submit">Submit</string>
     <string name="btn_call">Call</string>

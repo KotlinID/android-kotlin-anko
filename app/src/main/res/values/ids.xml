@@ -19,12 +19,15 @@
     <item name="toolbar_actions" type="id" />
     <item name="toolbar_db" type="id" />
     <item name="toolbar_coroutine" type="id" />
+    <item name="toolbar_db_result" type="id" />
     <item name="tv_home" type="id" />
     <item name="tv_first" type="id" />
     <item name="tv_second" type="id" />
     <item name="tv_name" type="id" />
     <item name="tv_callers" type="id" />
     <item name="tv_actions" type="id" />
+    <item name="tv_age" type="id" />
+    <item name="tv_occupation" type="id" />
     <item name="rv_home" type="id" />
     <item name="rv_callers" type="id" />
     <item name="rv_actions" type="id" />
