@@ -64,10 +64,10 @@
             android:label="@string/label_db"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity
-            android:name="id.kotlin.sample.anko.coroutine.CoroutineActivity"
-            android:label="@string/label_coroutine" />
-        <activity
             android:name="id.kotlin.sample.anko.db.DBResultActivity"
             android:label="@string/label_db_result" />
+        <activity
+            android:name="id.kotlin.sample.anko.coroutine.CoroutinesActivity"
+            android:label="@string/label_coroutines" />
     </application>
 </manifest>

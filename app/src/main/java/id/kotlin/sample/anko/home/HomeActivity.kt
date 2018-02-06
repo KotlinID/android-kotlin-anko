@@ -10,7 +10,7 @@ import id.kotlin.sample.anko.basic.FirstActivity
 import id.kotlin.sample.anko.basic.FirstExtraActivity
 import id.kotlin.sample.anko.basic.actions.ActionsActivity
 import id.kotlin.sample.anko.basic.callers.CallersActivity
-import id.kotlin.sample.anko.coroutine.CoroutineActivity
+import id.kotlin.sample.anko.coroutine.CoroutinesActivity
 import id.kotlin.sample.anko.db.DBInputActivity
 import id.kotlin.sample.anko.dsl.HomeUI
 import id.kotlin.sample.anko.home.HomeAdapter.HomeListener
@@ -49,7 +49,7 @@ class HomeActivity : AppCompatActivity(), HomeListener {
             HomeConfigs.MENU_BASIC_INTENT_CALLERS -> startActivity<CallersActivity>()
             HomeConfigs.MENU_BASIC_DIALOGS -> startActivity<ActionsActivity>()
             HomeConfigs.MENU_DB_SAMPLE -> startActivity<DBInputActivity>()
-            HomeConfigs.MENU_COROUTINE_SAMPLE -> startActivity<CoroutineActivity>()
+            HomeConfigs.MENU_COROUTINE_SAMPLE -> startActivity<CoroutinesActivity>()
         }
     }
 }

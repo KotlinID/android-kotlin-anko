@@ -6,7 +6,7 @@
     <string name="menu_basic_intent_callers">Basic Intent Callers</string>
     <string name="menu_basic_dialogs">Basic Dialogs</string>
     <string name="menu_db_sample">SQLite Sample</string>
-    <string name="menu_coroutine_sample">Coroutine Sample</string>
+    <string name="menu_coroutines_sample">Coroutines Sample</string>
     <string name="type_call">Make a Call</string>
     <string name="type_sms">Send Message</string>
     <string name="type_browse">Browse a Web</string>
@@ -19,6 +19,8 @@
     <string name="action_alert">Alert</string>
     <string name="action_selector">Selector</string>
     <string name="action_progress_dialog">Progress Dialog</string>
+    <string name="coroutine_reference">As Reference</string>
+    <string name="coroutine_background">Using Background</string>
     <string name="label_first">First</string>
     <string name="label_first_extra">First Extra</string>
     <string name="label_second">Second</string>
@@ -26,8 +28,8 @@
     <string name="label_callers">Callers</string>
     <string name="label_actions">Actions</string>
     <string name="label_db">SQLite Helper</string>
-    <string name="label_coroutine">Coroutine Helper</string>
     <string name="label_db_result">Your Profile</string>
+    <string name="label_coroutines">Coroutines Helper</string>
     <string name="message_permissions_granted">Permissions granted!</string>
     <string name="message_permissions_denied">Permissions denied!</string>
     <string name="message_toast">Hello!</string>
